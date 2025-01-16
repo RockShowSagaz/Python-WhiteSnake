@@ -12,3 +12,21 @@ print("3. Multiplication (*)")
 print("4. Division (/)")
 
 operation = input("Enter the number of the operation (1/2/3/4): ")
+
+if operation == "1":
+    result = num1 + num2
+    print(f"The result of addition is: {result}")
+elif operation == "2":
+    result = num1 - num2
+    print(f"The result of subtraction is: {result}")
+elif operation == "3":
+    result = num1 * num2
+    print(f"The result of multiplication is: {result}")
+elif operation == "4":
+    if num2 != 0:
+        result = num1 / num2
+        print(f"The result of division is: {result}")
+    else:
+        print("Error: Division by zero is not allowed!")
+else:
+    print("Invalid operation selected!")
