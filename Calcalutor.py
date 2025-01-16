@@ -30,3 +30,10 @@ elif operation == "4":
         print("Error: Division by zero is not allowed!")
 else:
     print("Invalid operation selected!")
+
+    try:
+        assert sum(2, 3) == 5, f"Klaida vykdant funkciją 'sum()'. Atsakymas turi būti {5}"
+        assert sub(17, 10) == 7, f"Klaida vykdant funkciją 'sub()'. Atsakymas turi būti {7}"
+        print(f'Visi testai yra sėkmingi')
+    except AssertionError as klaida:
+        print(f"Testas: {klaida}")
